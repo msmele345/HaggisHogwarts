@@ -1,0 +1,14 @@
+<h1 class="recipe-header">Warm and hearty Haggis Recipes</h1>
+
+
+<div class="recipe-box">
+  <h3>The Finest Haggis's </h3>
+  <ul>
+   <% @recipes.each do |recipe| %>
+     <li>
+       <a class="recipes-name"><%= link_to recipe.name, recipe %></a>
+       <p class="date"><%= recipe.created_at.strftime("%B, %d, %Y") %></p>
+     </li>
+  <% end  %>
+  </ul>
+</div>
