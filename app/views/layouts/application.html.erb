@@ -9,6 +9,15 @@
   </head>
 
   <body>
+    <section>
+      <% if logged_in? %>
+        <li>hello, <%= link_to "#{current_user.first_name}", @current_user %></li>
+        <li><%= link_to "logout", logout_path %></li>
+      <% else %>
+        <li><%= link_to "register", new_user_path %></li>
+        <li><%= link_to "login", new_session_path %></li>
+      <% end %>
+    </section>
     <%= yield %>
   </body>
 </html>
