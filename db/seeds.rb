@@ -10,18 +10,18 @@
 require 'faker'
 
 
-5.times do
-user = {:first_name => Faker::Name.first_name, :last_name => Faker::Name.last_name, :email => Faker::Internet.email, :password => 'password'   }
+# 5.times do
+# user = {:first_name => Faker::Name.first_name, :last_name => Faker::Name.last_name, :email => Faker::Internet.email, :password => 'password', :is_scottish => true  }
 
-User.create!(user)
+# User.create!(user)
 
-end
+# end
 
-5.times do
-  recipe = {:name => Faker::Food.dish, :prep_time => rand(1..120), :difficulty => rand(1..5), :instructions => Faker::Hipster.sentence(4),   :chef_id => rand(1..5), :category_id => rand(1..5)}
+# 5.times do
+#   recipe = {:name => Faker::Food.dish, :prep_time => rand(1..120), :difficulty => rand(1..5), :instructions => Faker::Hipster.sentence(4), :chef_id => rand(1..5), :category_id => rand(1..5)}
 
-  Recipe.create!(recipe)
-end
+#   Recipe.create!(recipe)
+# end
 
 
 
