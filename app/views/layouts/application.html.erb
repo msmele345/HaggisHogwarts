@@ -5,19 +5,26 @@
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all' %>
+    <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat|Oswald|Roboto|Spectral+SC" rel="stylesheet">
     <%= javascript_include_tag 'application' %>
   </head>
 
   <body>
-    <section>
+    <nav>
+      <ul>
       <% if logged_in? %>
-        <li>hello, <%= link_to "#{current_user.first_name}", @current_user %></li>
-        <li><%= link_to "logout", logout_path %></li>
+          <li>Welcome, <%= link_to "#{current_user.first_name}",  @current_user %></li>
+         | <li><%= link_to "Logout", logout_path %></li>
+         | <li><%= link_to "Home", root_path %></li>
       <% else %>
-        <li><%= link_to "register", new_user_path %></li>
-        <li><%= link_to "login", new_session_path %></li>
+         | <li><%= link_to "Register", new_user_path %></li>
+         | <li><%= link_to "Login", new_session_path %></li>
+         | <li><%= link_to "Home", root_path %></li>
       <% end %>
-    </section>
+      </ul>
+    </nav>
+
+    <div class="layout-header">Hearty Haggis Meals</div>
     <%= yield %>
   </body>
 </html>

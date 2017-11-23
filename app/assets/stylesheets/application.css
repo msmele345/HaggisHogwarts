@@ -64,7 +64,6 @@ repeating-linear-gradient(125deg, transparent, transparent 2px, rgba(0,0,0,.2) 2
   flex-direction: row;
   justify-content: space-around;
   padding: 0;
-  height: 100%;
   margin: 0;
   list-style: none;
 }
@@ -88,6 +87,19 @@ repeating-linear-gradient(125deg, transparent, transparent 2px, rgba(0,0,0,.2) 2
   color: #600b2a;
 }
 
+.category-box li p {
+  font-size: 10px;
+  font-family: 'Lato', sans-serif;
+
+}
+
+.category-box li dt {
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+  margin-bottom: 10px;
+
+}
+
  .button {
   background: none;
   padding: 0;
@@ -97,4 +109,38 @@ repeating-linear-gradient(125deg, transparent, transparent 2px, rgba(0,0,0,.2) 2
   color: #8C8C8C;
   font-size: 7pt;
   margin: 3px 30px;
+}
+
+
+.layout-header {
+  font-family: 'Spectral SC', serif;
+  font-size: 2em;
+  margin-top: 30px;
+  margin-left: 1cm;
+  letter-spacing: 2px;
+}
+
+.category-header{
+ font-family: 'Montserrat', sans-serif;
+  font-size: 1.5em;
+}
+
+.category-box h3 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+nav ul  {
+  list-style: none;
+  text-align: right;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display:inline;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+  line-height: 40px;
+  height: 40px;
 }
