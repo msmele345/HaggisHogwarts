@@ -1,0 +1,33 @@
+<h2>registration</h2>
+
+<% if @errors %>
+<ul>
+  <% @errors.each do |error| %>
+    <li><%= error %></li>
+  <% end %>
+</ul>
+<% end %>
+
+<%= form_for @user do |form| %>
+
+<p>
+  <%= form.text_field :first_name, placeholder: "first name" %>
+</p>
+<p>
+  <%= form.text_field :last_name, placeholder: "last name" %>
+</p>
+<p>
+  <%= form.text_field :email, placeholder: "email" %>
+</p>
+<p>
+  <%= form.password_field :password, placeholder: "password" %>
+</p>
+<p>
+  <%= form.label "Are you Scottish?" %>
+  <%= form.select :is_scottish, ['yes', 'no']%>
+</p>
+<p>
+  <%= form.submit "register", class: "form-button" %>
+</p>
+
+<% end %>

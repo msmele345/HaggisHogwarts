@@ -13,3 +13,88 @@
  *= require_tree .
  *= require_self
  */
+
+
+
+/*body {
+  background-color: hsl(2, 57%, 40%);
+  background-image: repeating-linear-gradient(transparent, transparent 50px, rgba(0,0,0,.4) 50px, rgba(0,0,0,.4) 53px, transparent 53px, transparent 63px, rgba(0,0,0,.4) 63px, rgba(0,0,0,.4) 66px, transparent 66px, transparent 116px, rgba(0,0,0,.5) 116px, rgba(0,0,0,.5) 166px, rgba(255,255,255,.2) 166px, rgba(255,255,255,.2) 169px, rgba(0,0,0,.5) 169px, rgba(0,0,0,.5) 179px, rgba(255,255,255,.2) 179px, rgba(255,255,255,.2) 182px, rgba(0,0,0,.5) 182px, rgba(0,0,0,.5) 232px, transparent 232px),
+repeating-linear-gradient(270deg, transparent, transparent 50px, rgba(0,0,0,.4) 50px, rgba(0,0,0,.4) 53px, transparent 53px, transparent 63px, rgba(0,0,0,.4) 63px, rgba(0,0,0,.4) 66px, transparent 66px, transparent 116px, rgba(0,0,0,.5) 116px, rgba(0,0,0,.5) 166px, rgba(255,255,255,.2) 166px, rgba(255,255,255,.2) 169px, rgba(0,0,0,.5) 169px, rgba(0,0,0,.5) 179px, rgba(255,255,255,.2) 179px, rgba(255,255,255,.2) 182px, rgba(0,0,0,.5) 182px, rgba(0,0,0,.5) 232px, transparent 232px),
+repeating-linear-gradient(125deg, transparent, transparent 2px, rgba(0,0,0,.2) 2px, rgba(0,0,0,.2) 3px, transparent 3px, transparent 5px, rgba(0,0,0,.2) 5px);
+}
+*/
+.recipe-box ul{
+  flex-direction: row;
+  justify-content: center;
+    padding: 0;
+  margin: 0;
+  list-style: none;
+  border: 1px solid silver;
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+}
+.recipe-box li {
+  background: #EBFC67;
+  padding: 25px;
+  width: 300px;
+  margin: 30px;
+}
+.recipe-box li a {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 2em;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+.recipe-box li a:link {
+  color: #b74e28;
+}
+.recipe-box li a:visited {
+  color: #600b2a;
+}
+
+
+.category-box ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0;
+  height: 100%;
+  margin: 0;
+  list-style: none;
+}
+.category-box li {
+  background: #76BE9B;
+  padding: 25px;
+  width: 300px;
+  margin: 30px;
+}
+.category-box li a {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 2em;
+  height: 100%
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+.category-box li a:link {
+  color: #b74e28;
+}
+.category-box li a:visited {
+  color: #600b2a;
+}
+
+ .button {
+  background: none;
+  padding: 0;
+  border: none;
+  font: inherit;
+  text-decoration: none;
+  color: #8C8C8C;
+  font-size: 7pt;
+  margin: 3px 30px;
+}
