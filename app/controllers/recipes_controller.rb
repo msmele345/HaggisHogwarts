@@ -53,3 +53,10 @@ class RecipesController < ApplicationController
   end
 
 end
+
+
+##TODO:
+# New recipe form style
+# user profile
+# recipe show
+# edit/update/delete ajax
