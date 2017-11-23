@@ -14,8 +14,10 @@ class RecipesController < ApplicationController
     # @recipe.chef_id = current_user.id
 
     if @recipe.save
-      redirect_to @recipe
+      redirect_to root_path
     else
+      @errors = @recipe.errors.full_messages
+      p @errors
       render 'new'
     end
   end
