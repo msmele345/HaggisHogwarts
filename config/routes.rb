@@ -7,11 +7,12 @@ Rails.application.routes.draw do
 
   # root 'recipes#index'
 
+  resources :recipes
 
 
   resources :users, only: [:create, :show, :new]
 
-  resources :categories do
+  resources :categories, only: [:index, :show] do
     resources :recipes
   end
 

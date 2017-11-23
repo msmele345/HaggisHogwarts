@@ -57,3 +57,44 @@ repeating-linear-gradient(125deg, transparent, transparent 2px, rgba(0,0,0,.2) 2
 .recipe-box li a:visited {
   color: #600b2a;
 }
+
+
+.category-box ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0;
+  height: 100%;
+  margin: 0;
+  list-style: none;
+}
+.category-box li {
+  background: #76BE9B;
+  padding: 25px;
+  width: 300px;
+  margin: 30px;
+}
+.category-box li a {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 2em;
+  height: 100%
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+.category-box li a:link {
+  color: #b74e28;
+}
+.category-box li a:visited {
+  color: #600b2a;
+}
+
+ .button {
+  background: none;
+  padding: 0;
+  border: none;
+  font: inherit;
+  text-decoration: none;
+  color: #8C8C8C;
+  font-size: 7pt;
+  margin: 3px 30px;
+}
