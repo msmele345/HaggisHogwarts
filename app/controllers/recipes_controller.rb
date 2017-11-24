@@ -13,11 +13,13 @@ class RecipesController < ApplicationController
   end
 
   def create
+    ingredients = params[:recipe][:ingredient]
     @recipe = Recipe.new(recipe_params)
-
     @recipe.chef_id = current_user.id
     @recipe.category_id = params[:category_id]
-
+    ingredients.each do |ingredient, value|
+      @recipe.ingredients.build(item: value).build_recipe
+    end
     if @recipe.save
       redirect_to root_path
     else
@@ -46,7 +48,7 @@ class RecipesController < ApplicationController
   private
 
   def recipe_params
-    params.require(:recipe).permit(:name, :prep_time, :instructions, :difficulty, :photo_url, :category_id)
+    params.require(:recipe).permit(:id, :name, :prep_time, :instructions, :difficulty, :photo_url, :category_id, :ingredient, :_destroy)
   end
 
   def find_recipe
