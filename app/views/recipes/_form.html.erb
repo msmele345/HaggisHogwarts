@@ -25,6 +25,20 @@
   </p>
   <br>
 
+  <%= f.fields_for :ingredient do |ingredient_form| %>
+    <p>
+        Ingredient: <%= ingredient_form.text_field :item %>
+    </p>
+  <% end %>
+
+
+  <%= f.fields_for :ingredient do |ingredient_form| %>
+    <p>
+        Ingredient: <%= ingredient_form.text_field :item1 %>
+    </p>
+  <% end %>
+
+
   <p>
     <%= f.submit %>
   </p>

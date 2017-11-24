@@ -18,22 +18,18 @@ require 'faker'
 # end
 
 
+Category.create!(:name => "Dinner")
+Category.create!(:name => "Lunch")
+Category.create!(:name => "Breakfast")
+Category.create!(:name => "Dessert")
 
 
 
-
-# Category.create!(:name => "Dinner")
-# Category.create!(:name => "Lunch")
-# Category.create!(:name => "Breakfast")
-# Category.create!(:name => "Dessert")
-
-
-
-# Measurment.create!(:unit => "Ounces")
-# Measurment.create!(:unit => "Teaspoons")
-# Measurment.create!(:unit => "Tablespoons")
-# Measurment.create!(:unit => "Cups")
-# Measurment.create!(:unit => "Handfulls")
+Measurment.create!(:unit => "Ounces")
+Measurment.create!(:unit => "Teaspoons")
+Measurment.create!(:unit => "Tablespoons")
+Measurment.create!(:unit => "Cups")
+Measurment.create!(:unit => "Handfulls")
 
 
 
