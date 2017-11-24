@@ -20,6 +20,7 @@ Rails.application.routes.draw do
     resources :recipes
   end
 
+  resources :ingredients
   resources :sessions
 
   root "categories#index"

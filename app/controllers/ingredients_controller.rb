@@ -5,13 +5,14 @@ class IngredientsController < ApplicationController
   end
 
   def new
-    @ingredient = Ingredient.new
-    @recipe = Recipe.find(params[:recipe_id])
+    @count = params[:count]
+    @measurements = Measurment.all
+    respond_to do |format|
+      format.js { render partial: "ingredients/form", locals: { count: @count, measurements: @measurements } }
+    end
   end
 
-
   def create
-    @
 
   end
 
