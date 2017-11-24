@@ -24,7 +24,10 @@
 </p>
 <p>
   <%= form.label "Are you Scottish?" %>
-  <%= form.select :is_scottish, ['yes', 'no']%>
+  <%= form.radio_button(:is_scottish, "true") %>
+  <%= label_tag(:is_scotish, 'YES') %>
+  <%= form.radio_button(:is_scottish, "false") %>
+  <%= label_tag(:is_scotish, 'NO') %>
 </p>
 <p>
   <%= form.submit "register", class: "form-button" %>

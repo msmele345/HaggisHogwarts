@@ -24,11 +24,11 @@ class UsersController < ApplicationController
   private
 
   def secure_params
-    params.require(:user).permit(:first_name, :last_name, :email, :password)
+    params.require(:user).permit(:first_name, :last_name, :email, :password, :is_scottish)
   end
 
   def set_scottish(params_scottish)
-    if params_scottish == "yes"
+    if params_scottish == "true"
       @user.is_scottish = true
     else
       @user.is_scottish = false
