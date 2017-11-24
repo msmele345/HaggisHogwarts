@@ -1,6 +1,6 @@
 class Ingredient < ApplicationRecord
 
-	belongs_to :recipe
-	belongs_to :measurement
+	belongs_to :recipe, optional: true
+	belongs_to :measurment, optional: true
 
 end

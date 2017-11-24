@@ -25,10 +25,10 @@ ActiveRecord::Schema.define(version: 20171122203214) do
     t.string "item"
     t.integer "quantity"
     t.bigint "recipe_id"
-    t.bigint "measurement_id"
+    t.bigint "measurment_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["measurement_id"], name: "index_ingredients_on_measurement_id"
+    t.index ["measurment_id"], name: "index_ingredients_on_measurment_id"
     t.index ["recipe_id"], name: "index_ingredients_on_recipe_id"
   end
 

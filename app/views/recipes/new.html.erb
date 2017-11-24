@@ -1,9 +1,11 @@
-<% if logged_in? %>
-  <div class="new-recipe-box">
-    <h1>Got some Haggis?</h1>
-      <%= render 'form' %>
-  </div>
- <% else %>
-    <p class="session-fail"><strong>Please login before adding a new recipe!</strong></p>
+<div class="new-recipe-form">
+  <% if logged_in? %>
+    <div class="new-recipe-box">
+      <h1>Got some Haggis?</h1>
+        <%= render 'form' %>
+    </div>
+   <% else %>
+      <p class="session-fail"><strong>Please login  before adding a new recipe!</strong></p>
+  <% end %>
+</div>
 
-<% end %>

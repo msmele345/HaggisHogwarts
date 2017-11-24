@@ -17,19 +17,23 @@ require 'faker'
 
 # end
 
-# 5.times do
-#   recipe = {:name => Faker::Food.dish, :prep_time => rand(1..120), :difficulty => rand(1..5), :instructions => Faker::Hipster.sentence(4), :chef_id => rand(1..5), :category_id => rand(1..5)}
-
-#   Recipe.create!(recipe)
-# end
 
 
 
 
-Category.create!(:name => "Dinner")
-Category.create!(:name => "Lunch")
-Category.create!(:name => "Breakfast")
-Category.create!(:name => "Dessert")
+
+# Category.create!(:name => "Dinner")
+# Category.create!(:name => "Lunch")
+# Category.create!(:name => "Breakfast")
+# Category.create!(:name => "Dessert")
+
+
+
+# Measurment.create!(:unit => "Ounces")
+# Measurment.create!(:unit => "Teaspoons")
+# Measurment.create!(:unit => "Tablespoons")
+# Measurment.create!(:unit => "Cups")
+# Measurment.create!(:unit => "Handfulls")
 
 
 

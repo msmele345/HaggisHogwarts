@@ -7,8 +7,12 @@ Rails.application.routes.draw do
 
   # root 'recipes#index'
 
-  resources :recipes
-
+  resources :recipes do
+    resources :ingredients do
+      resources :measurments
+    end
+  end
+##do we need this or can we do ingredients>measurments only?
 
   resources :users, only: [:create, :show, :new]
 

@@ -11,7 +11,7 @@
        <% if logged_in? %>
          <button class="button"><%= link_to "Add Recipe", new_category_recipe_path(category) %></button>
        <% end  %>
-   <p><%= render partial: "recipe", collection: category.recipes %></p>
+   <%= render partial: "recipe", collection: category.recipes %>
      </li>
   <% end  %>
   </ul>
