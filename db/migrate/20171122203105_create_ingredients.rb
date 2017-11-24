@@ -5,7 +5,7 @@ class CreateIngredients < ActiveRecord::Migration[5.1]
     	t.string	:item
     	t.integer	:quantity
     	t.references	:recipe
-    	t.references	:measurement
+    	t.references	:measurment
 
       t.timestamps
     end

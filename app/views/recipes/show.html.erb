@@ -1,4 +1,17 @@
 
 <div class="recipe-show-header">
-  <h2><%= @recipe.name %></h2>
+  <h2 align="center"><%= @recipe.name %></h2>
+</div>
+
+
+<div class="ingedients-list">
+  <h3><%= @recipe.name %> 's Ingredients: </h3>
+ <ul>
+  <% @recipe.ingredients.each do |ingredient| %>
+    <li>
+      <p><%= ingredient.item %></p>
+      <p><%= ingredient.quantity %>-<%= ingredient.measurment.unit  %></p>
+    </li>
+  <% end  %>
+</ul>
 </div>

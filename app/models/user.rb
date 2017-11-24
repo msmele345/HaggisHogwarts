@@ -2,6 +2,8 @@ class User < ApplicationRecord
 
   has_secure_password
 
+
+
 	has_many :recipes, foreign_key: :chef_id
 	has_many :categories, through: :recipes
 
