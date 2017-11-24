@@ -20,8 +20,8 @@
   <br>
 
   <p>
-    <%= form.label :difficulty, "Difficulty Level (1-5)" %><br>
-    <%= form.text_area :difficulty %>
+    <%= form.label "Difficulty Rating:" %>
+    <%= form.select :difficulty, [1,2,3,4,5]%>
   </p>
   <br>
 

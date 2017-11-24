@@ -1,4 +1,35 @@
 <li>
 <input type="text" name="recipe[ingredient][item<%= count %>]" id="recipe_ingredient_item" placeholder="ingredient">
+Unit:
+<select name="recipe[ingredient][measurment_id]">
+  <option value="Pounds">Pounds</option>
+  <option value="Cups">Cups</option>
+  <option value="Teaspoons">Teaspoons</option>
+  <option value="Tablespoons">Tablespoons</option>
+  <option value="ML">ML</option>
+  <option value="L">Leaders</option>
+
+</select>
+Qty:
+<select name="recipe[ingredient][quantity]">
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  <option value="6">6</option>
+  <option value="7">7</option>
+  <option value="8">8</option>
+</select>
 <!-- dropdown with measurements (measurements - Measurement.all, name="recipe[ingredient][measurement_id]") -->
 </li>
+
+<div class="conversions">
+  <p>
+  1 cup = 250 mL,<br>
+  1 pint = 500 mL<br>
+  1 quart = 1 L <br>
+  1 gallon = 4 L <br>
+  </p>
+
+</div>
