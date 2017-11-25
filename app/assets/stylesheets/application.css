@@ -24,6 +24,10 @@ repeating-linear-gradient(270deg, transparent, transparent 50px, rgba(0,0,0,.4) 
 repeating-linear-gradient(125deg, transparent, transparent 2px, rgba(0,0,0,.2) 2px, rgba(0,0,0,.2) 3px, transparent 3px, transparent 5px, rgba(0,0,0,.2) 5px);
 }
 
+.add-ingredient-link{
+  color:white ;
+}
+
 .recipe-box ul{
   flex-direction: row;
   justify-content: center;
@@ -130,6 +134,18 @@ repeating-linear-gradient(125deg, transparent, transparent 2px, rgba(0,0,0,.2) 2
   font-family: 'Montserrat', sans-serif;
 }
 
+.conversions {
+  float: right;
+  position: absolute;
+  border: 1px solid white;
+  margin-right: 20px;
+}
+
+.new-recipe-form {
+/*  display: flex;
+  justify-content:center;*/
+}
+
 
 nav ul  {
   list-style: none;
@@ -140,6 +156,15 @@ nav ul  {
 
 nav li {
   display:inline;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+  line-height: 40px;
+  height: 40px;
+}
+
+nav li a {
+  display:inline;
+  color:white ;
   font-family: 'Montserrat', sans-serif;
   font-size: 1em;
   line-height: 40px;

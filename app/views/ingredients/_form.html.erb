@@ -1,0 +1,27 @@
+<dt><br>
+  Ingredient:
+  <input type="text" name="recipe[ingredient][item<%= count %>]" id=" recipe_ingredient_item" placeholder="ingredient"><br>
+  Unit:
+  <select name="recipe[measurement][measurment_id<%= count %>]">
+    <option value="Ounces">Ounces</option>
+    <option value="Teaspoons">Teaspoons</option>
+    <option value="Tablespoons">Tablespoons</option>
+    <option value="Cups">Cups</option>
+    <option value="Handfulls">Handfulls</option>
+    <option value="Pounds">Pounds</option>
+    <option value="ML">ML</option>
+    <option value="L">L</option>
+  </select><br>
+
+  Qty:
+  <select name="recipe[qty][quantity<%= count %>]">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+  </select>
+</dt>
