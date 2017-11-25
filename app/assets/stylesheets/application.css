@@ -18,10 +18,32 @@
 
 body {
   background-color: hsl(2, 57%, 40%);
-  color: white;
+  color: #019b3f;
+  font-size: 18px;
   background-image: repeating-linear-gradient(transparent, transparent 50px, rgba(0,0,0,.4) 50px, rgba(0,0,0,.4) 53px, transparent 53px, transparent 63px, rgba(0,0,0,.4) 63px, rgba(0,0,0,.4) 66px, transparent 66px, transparent 116px, rgba(0,0,0,.5) 116px, rgba(0,0,0,.5) 166px, rgba(255,255,255,.2) 166px, rgba(255,255,255,.2) 169px, rgba(0,0,0,.5) 169px, rgba(0,0,0,.5) 179px, rgba(255,255,255,.2) 179px, rgba(255,255,255,.2) 182px, rgba(0,0,0,.5) 182px, rgba(0,0,0,.5) 232px, transparent 232px),
 repeating-linear-gradient(270deg, transparent, transparent 50px, rgba(0,0,0,.4) 50px, rgba(0,0,0,.4) 53px, transparent 53px, transparent 63px, rgba(0,0,0,.4) 63px, rgba(0,0,0,.4) 66px, transparent 66px, transparent 116px, rgba(0,0,0,.5) 116px, rgba(0,0,0,.5) 166px, rgba(255,255,255,.2) 166px, rgba(255,255,255,.2) 169px, rgba(0,0,0,.5) 169px, rgba(0,0,0,.5) 179px, rgba(255,255,255,.2) 179px, rgba(255,255,255,.2) 182px, rgba(0,0,0,.5) 182px, rgba(0,0,0,.5) 232px, transparent 232px),
 repeating-linear-gradient(125deg, transparent, transparent 2px, rgba(0,0,0,.2) 2px, rgba(0,0,0,.2) 3px, transparent 3px, transparent 5px, rgba(0,0,0,.2) 5px);
+}
+
+.body-container {
+  background-color: white;
+  border-right: 5px solid #AAAAAA;
+  border-left: 5px solid #AAAAAA;
+  min-height: 850px;
+  width: 60%;
+  display: block;
+  margin: auto;
+}
+
+.homepage-image-container {
+  width: 100%;
+  padding-bottom: 25px;
+}
+
+.main-page-image {
+  display: block;
+  margin: auto;
+  margin-top: 50px;
 }
 
 .add-ingredient-link{
@@ -76,7 +98,9 @@ repeating-linear-gradient(125deg, transparent, transparent 2px, rgba(0,0,0,.2) 2
   background: #76BE9B;
   padding: 25px;
   width: 300px;
-  margin: 30px;
+  margin-top: 70px;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 .category-box li a {
   font-family: 'Abril Fatface', cursive;
@@ -160,11 +184,13 @@ nav li {
   font-size: 1em;
   line-height: 40px;
   height: 40px;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 nav li a {
   display:inline;
-  color:white ;
+  color: #019b3f;
   font-family: 'Montserrat', sans-serif;
   font-size: 1em;
   line-height: 40px;
