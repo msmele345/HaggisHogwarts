@@ -1,7 +1,8 @@
+<div class="registration-container" >
 <div class="new-recipe-form">
   <% if logged_in? %>
     <div class="new-recipe-box">
-      <h1>Got some Haggis?</h1>
+      <h3>Got some Haggis?</h3>
         <%= render 'form' %>
     </div>
    <% else %>
@@ -9,11 +10,12 @@
   <% end %>
 </div>
 
-<div class="conversions">
+<!-- <div class="conversions">
   <p>
   1 cup = 250 mL,<br>
   1 pint = 500 mL<br>
   1 quart = 1 L <br>
   1 gallon = 4 L <br>
   </p>
+</div> -->
 </div>

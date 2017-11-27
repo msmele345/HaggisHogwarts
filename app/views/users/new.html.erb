@@ -1,4 +1,5 @@
-<h2>registration</h2>
+<div class="registration-container" >
+<h3>registration</h3>
 
 <% if @errors %>
 <ul>
@@ -11,16 +12,16 @@
 <%= form_for @user do |form| %>
 
 <p>
-  <%= form.text_field :first_name, placeholder: "first name" %>
+  <%= form.text_field :first_name, placeholder: "first name", class: "registration-form-field" %>
 </p>
 <p>
-  <%= form.text_field :last_name, placeholder: "last name" %>
+  <%= form.text_field :last_name, placeholder: "last name", class: "registration-form-field" %>
 </p>
 <p>
-  <%= form.text_field :email, placeholder: "email" %>
+  <%= form.text_field :email, placeholder: "email", class: "registration-form-field" %>
 </p>
 <p>
-  <%= form.password_field :password, placeholder: "password" %>
+  <%= form.password_field :password, placeholder: "password", class: "registration-form-field" %>
 </p>
 <p>
   <%= form.label "Are you Scottish?" %>
@@ -34,3 +35,4 @@
 </p>
 
 <% end %>
+</div>

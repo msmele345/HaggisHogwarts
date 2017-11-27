@@ -3,34 +3,33 @@
 <%= form_for([@category, @recipe], method: 'post') do |form| %>
 
   <p>
-    <%= form.label :name, "Dish Name" %><br>
-    <%= form.text_field :name %>
+    <%= form.text_field :name, placeholder: "dish name", class: "registration-form-field" %>
   </p>
 
   <p>
-    <%= form.label :prep_time, "Prep time (minutes)" %><br>
-    <%= form.text_area :prep_time %>
+    <%= form.text_field :prep_time, placeholder: "prep time (minutes)", class: "registration-form-field"  %>
   </p>
-  <br>
 
   <p>
-    <%= form.label :instructions %><br>
+    <%= form.label :instructions, class: "new-haggis-label" %><br>
     <%= form.text_area :instructions %>
   </p>
-  <br>
 
   <p>
-    <%= form.label "Difficulty Rating:" %>
+    <%= form.label "Difficulty Rating:", class: "new-haggis-label" %>
     <%= form.select :difficulty, [1,2,3,4,5]%>
   </p>
-  <br>
-
-  <a href="/ingredients/new" class="add-ingredient-link" data-count="0">+ add ingredient</a>
-  <%= render :partial=> 'ingredients/form', locals: {form: form, count: 0} %>
-  <div class="ingredients-add-container">
-  </div>
 
   <p>
-    <%= form.submit %>
+    <%= form.label "Ingredients:", class: "new-haggis-ingredient-label" %>  
+    <br />
+    <%= render :partial=> 'ingredients/form', locals: {form: form, count: 0} %>
+  </p>
+  <a href="/ingredients/new" class="add-ingredient-link" data-count="0">+ add ingredient</a>
+  <div class="ingredients-add-container">
+  </div>  
+
+  <p>
+    <%= form.submit "submit recipe" %>
   </p>
 <% end  %>
