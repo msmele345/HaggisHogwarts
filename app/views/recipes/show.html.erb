@@ -1,3 +1,4 @@
+<div class="registration-container" >
 
 <div class="recipe-show-header">
   <h2 align="center"><%= @recipe.name %></h2>
@@ -5,13 +6,18 @@
 
 
 <div class="ingedients-list">
-  <h3><%= @recipe.name %> 's Ingredients: </h3>
+
+<h3>Prep time: <%= @recipe.prep_time %> minutes</h3>	
+  <h3>Ingredients:</h3>
  <ul>
   <% @recipe.ingredients.each do |ingredient| %>
     <li>
-      <p><%= ingredient.item %></p>
-      <p><%= ingredient.quantity %></p>
+      <p><%= ingredient.quantity %> <%= ingredient.measurment.unit %> of <%= ingredient.item %></p>
     </li>
   <% end  %>
 </ul>
+<h3>Instructions:</h3>
+<p><%= @recipe.instructions %></p>
+</div>
+
 </div>

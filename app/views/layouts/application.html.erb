@@ -11,6 +11,7 @@
   </head>
 
   <body>
+    <section class="body-container">
     <nav>
       <ul>
       <% if logged_in? %>
@@ -25,7 +26,8 @@
       </ul>
     </nav>
 
-    <div class="layout-header">Hearty Haggis Meals</div>
+    <div class="layout-header">Haggis Hogwarts</div>
     <%= yield %>
+  </section>
   </body>
 </html>

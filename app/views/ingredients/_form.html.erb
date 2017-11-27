@@ -1,19 +1,5 @@
-<dt><br>
-  Ingredient:
-  <input type="text" name="recipe[ingredient][item<%= count %>]" id=" recipe_ingredient_item" placeholder="ingredient"><br>
-  Unit:
-  <select name="recipe[measurement][measurment_id<%= count %>]">
-    <option value="Ounces">Ounces</option>
-    <option value="Teaspoons">Teaspoons</option>
-    <option value="Tablespoons">Tablespoons</option>
-    <option value="Cups">Cups</option>
-    <option value="Handfulls">Handfulls</option>
-    <option value="Pounds">Pounds</option>
-    <option value="ML">ML</option>
-    <option value="L">L</option>
-  </select><br>
-
-  Qty:
+<div class="new-ingredient-container">
+<span>
   <select name="recipe[qty][quantity<%= count %>]">
     <option value="1">1</option>
     <option value="2">2</option>
@@ -24,4 +10,24 @@
     <option value="7">7</option>
     <option value="8">8</option>
   </select>
-</dt>
+<span>
+<span>
+  <select name="recipe[measurement][measurment_id<%= count %>]">
+    <option value="Ounces">Ounces</option>
+    <option value="Teaspoons">Teaspoons</option>
+    <option value="Tablespoons">Tablespoons</option>
+    <option value="Cups">Cups</option>
+    <option value="Handfulls">Handfulls</option>
+    <option value="Pounds">Pounds</option>
+    <option value="ML">ML</option>
+    <option value="L">L</option>
+  </select>
+</span>
+<span style="font-size: 16px; color: gray;">
+ of 
+</span>
+<span>
+  <input type="text" name="recipe[ingredient][item<%= count %>]" id=" recipe_ingredient_item" placeholder="ingredient" class="ingredient-form-field">
+</span>
+
+

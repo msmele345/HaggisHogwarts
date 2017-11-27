@@ -1,4 +1,5 @@
-<h2>login</h2>
+<div class="registration-container" >
+<h3>login</h3>
 
 <% if @errors %>
 <ul>
@@ -10,12 +11,13 @@
 
 <form action="/sessions" method="POST">
 <p>
-  <input type="text" name="email" placeholder="email" >
+  <input type="text" name="email" placeholder="email" class="registration-form-field">
 </p>
 <p>
-  <input type="password" name="password" placeholder="password" >
+  <input type="password" name="password" placeholder="password" class="registration-form-field">
 </p>
 <p>
-  <input type="submit" value="login" placeholder="login">
+  <input type="submit" value="login" placeholder="login" class="form-button">
 </p>
 </form>
+</div>
