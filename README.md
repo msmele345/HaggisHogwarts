@@ -1,24 +1,17 @@
-# README
+HaggisHogwarts
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+HaggisHogwarts is a web application that allows users to enter custom Haggis recipes. Recipes include ingredients and measurments for each ingredient. The admin user then chooses which recipes he wants displayed on his dynamic online menu. This was a DBC mock client project. 
 
-Things you may want to cover:
+Built With:
+Ruby on Rails 
+PostgreSQL
+Javascript/Ajax
 
-* Ruby version
+Authors
+Mitch Mele - msmele345
+Adam Johnson - adamjohnnnson
 
-* System dependencies
+License
+This project is licensed under the MIT License - see the LICENSE.md file for details
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+HaggisHogWarts
