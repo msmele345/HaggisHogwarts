@@ -7,14 +7,14 @@ HaggisHogwarts is a web application that allows users to enter custom Haggis rec
 
 
 Built With:
-Ruby on Rails 
-PostgreSQL
+Ruby on Rails |
+PostgreSQL |
 Javascript/Ajax
 
 
 
 Authors
-Mitch Mele - msmele345
+Mitch Mele - msmele345 |
 Adam Johnson - adamjohnnnson
 
 
